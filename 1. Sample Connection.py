@@ -1,5 +1,5 @@
 """
-Sample TWS API connection via app.connect()2
+Sample TWS API connection via app.connect()
 """
 
 from ibapi.client import EClient
