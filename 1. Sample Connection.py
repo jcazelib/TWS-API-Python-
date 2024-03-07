@@ -1,5 +1,5 @@
 """
-Sample TWS API connection via app.connect()
+Sample TWS API connection via app.connect() - https://ibkrcampus.com/ibkr-api-page/trader-workstation-api/#connectivity
 """
 
 from ibapi.client import EClient
