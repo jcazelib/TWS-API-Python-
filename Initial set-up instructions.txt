@@ -18,7 +18,6 @@ How to get started with TWS API (Python):
 
 
 
-
 NOTE on reccomended socket ports:
 ---------------------------------
 TWS Live (socket port) = 7496
@@ -26,3 +25,8 @@ TWS Paper (socket port) = 7497
 IB Gateway Live (socket port) = 4001
 IB Gateway Paper (socket port) = 4002
 
+
+
+How to access the IBKR Paper account:
+-------------------------------------
+Login to www.ibkr.com -> Settings (top-right corner via “Welcome + your name”) -> choose: Paper Trading Account -> The paper account username &password may be retrieved here if needed
