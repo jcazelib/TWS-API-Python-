@@ -1,7 +1,7 @@
 """
 Place a VWAP Algo order via placeOrder - https://interactivebrokers.github.io/tws-api/algos.html | https://www.interactivebrokers.com/en/trading/ordertypes.php
 
-Once a Algo order is placed to TWS, you may double-check the details via TWS -> Activity/Orders panel -> right-click on the order -> Modify -> Order Ticket -> IBALGO
+Once a Algo order is placed to TWS, you may double-check the details via:   TWS -> Activity/Orders panel -> right-click on the order -> Modify -> Order Ticket -> IBALGO
 """
 
 from ibapi.client import *
