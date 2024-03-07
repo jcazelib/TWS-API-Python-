@@ -1,3 +1,7 @@
+"""
+Requests 5-second OHLCV bars (via reqRealTimeBars) which correspond to the TWS Chart - https://ibkrcampus.com/ibkr-api-page/trader-workstation-api/#live-bars
+"""
+
 from decimal import Decimal
 from ibapi.client import *
 from ibapi.wrapper import *
