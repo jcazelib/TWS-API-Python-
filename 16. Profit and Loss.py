@@ -21,7 +21,7 @@ app.connect("127.0.0.1", 7497, clientId=1)
 time.sleep(1) 
 
 print("")
-app.reqPnL(1, "DU2372889", "")                      #specifying the IBKR Account Number may be required
-#app.reqPnLSingle(17002, "DU2372889", "", 265598)   #to specify PnL for a specific security 
+app.reqPnL(123, "DU2372889", "")                      #specifying the IBKR Account Number may be required
+#app.reqPnLSingle(1234, "DU2372889", "", 265598)   #to specify PnL for a specific security 
 
 app.run()
