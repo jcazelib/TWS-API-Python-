@@ -24,7 +24,7 @@ class TradeApp(EWrapper, EClient):
     def tickByTickMidPoint(self, reqId: int, time: int, midPoint: float):
         print("Midpoint. ReqId:", reqId, "Time:", time, "MidPoint:", floatMaxString(midPoint))
 
-def usTechStk(symbol,sec_type="STK",currency="USD",exchange="SMART"):
+def stockContract(symbol, sec_type="STK", currency="USD", exchange="SMART"):
     contract = Contract()
     contract.symbol = symbol
     contract.secType = sec_type
@@ -33,7 +33,7 @@ def usTechStk(symbol,sec_type="STK",currency="USD",exchange="SMART"):
     #contract.primaryExchange = ""
     return contract 
 
-def streamData(req_num,contract):
+def streamTickByTickData(req_num, contract):
     app.reqTickByTickData(reqId=req_num, 
                           contract=contract,
                           tickType="Last",
@@ -51,5 +51,5 @@ con_thread.start()
 
 for ticker in tickers:
     time.sleep(.2)
-    streamData(tickers.index(ticker),usTechStk(ticker))
+    streamTickByTickData(tickers.index(ticker), stockContract(ticker))
     
