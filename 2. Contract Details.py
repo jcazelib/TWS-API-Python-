@@ -1,5 +1,5 @@
 """
-Sample request for Contract Details (on AAPL Stock) via reqContractDetails - https://ibkrcampus.com/ibkr-api-page/trader-workstation-api/#contracts | https://ibkrcampus.com/ibkr-api-page/trader-workstation-api/#contract-details
+Sample request for Contract Details (for AAPL Stock) via reqContractDetails - https://ibkrcampus.com/ibkr-api-page/trader-workstation-api/#contracts | https://ibkrcampus.com/ibkr-api-page/trader-workstation-api/#contract-details
 
 Contract Details can also be retreived manually, via TWS - https://ibkrcampus.com/ibkr-api-page/trader-workstation-api/#tws-contract-details
 """
