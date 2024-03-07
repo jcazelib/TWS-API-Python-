@@ -39,7 +39,6 @@ def stockContract(symbol, sec_type="STK", currency="USD", exchange="SMART"):
     contract.currency = currency
     contract.secType = sec_type
     contract.exchange = exchange
-    contract.primaryExchange = "NYSE"        
     return contract 
 
 def streamMarketData(req_num,contract):
