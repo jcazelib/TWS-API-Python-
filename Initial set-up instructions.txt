@@ -1,0 +1,28 @@
+How to get started with TWS API (Python):
+------------------------------------------
+1. Download IBKR’s trading platform (either TWS or IB Gateway)
+    TWS download - https://www.interactivebrokers.com/en/trading/tws.php#tws-software  
+    IB Gateway download - https://www.interactivebrokers.com/en/trading/ibgateway-latest.php | https://www.interactivebrokers.com/en/trading/ibgateway-stable.php
+
+2. Download TWS API - https://interactivebrokers.github.io/  
+
+3. Run the setup.py file in Command Prompt / Anaconda prompt - https://ibkrcampus.com/ibkr-api-page/trader-workstation-api/#setup-python
+    cd C:\TWS API\source\pythonclient
+    python setup.py install
+
+4. Enable TWS or IB Gateway to accept incoming API connections:
+    TWS -> File/Edit (top-left corner) -> Global Configuration -> API -> Settings -> check off: “Enable ActiveX & Socket clients” -> Socket port = 7496 (for Live account) or 7497 (for the Paper account) -> Ok
+    IB Gateway -> should have “Enable ActiveX & Socket clients” checked-off by default -> move on to step 5
+
+5. Connect your Python code to TWS/IB Gateway in order to place trades, retrieve market data, retrieve account balances, etc.
+
+
+
+
+NOTE on reccomended socket ports:
+---------------------------------
+TWS Live (socket port) = 7496
+TWS Paper (socket port) = 7497
+IB Gateway Live (socket port) = 4001
+IB Gateway Paper (socket port) = 4002
+
