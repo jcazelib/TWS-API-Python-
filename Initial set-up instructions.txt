@@ -30,3 +30,5 @@ IB Gateway Paper (socket port) = 4002
 How to access the IBKR Paper account:
 -------------------------------------
 Login to www.ibkr.com -> Settings (top-right corner via “Welcome + your name”) -> choose: Paper Trading Account -> The paper account username &password may be retrieved here if needed
+
+
