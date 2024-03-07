@@ -1,5 +1,5 @@
 """
-Sample request for Contract Details (AAPL Stock)
+Sample request for Contract Details (on AAPL Stock) via reqContractDetails
 """
 
 from ibapi.client import *
