@@ -1,5 +1,5 @@
 """
-Requests TWS (Watchlist) market data - https://ibkrcampus.com/ibkr-api-page/trader-workstation-api/#available-tick-types | https://ibkrcampus.com/ibkr-api-page/trader-workstation-api/#watchlist-data
+Requests TWS (Watchlist) market data via reqMktData - https://ibkrcampus.com/ibkr-api-page/trader-workstation-api/#available-tick-types | https://ibkrcampus.com/ibkr-api-page/trader-workstation-api/#watchlist-data
 
 EWrapper methods:
 tickPrice - Handles all price-related ticks. A tickPrice value of -1 or 0 followed by a tickSize of 0 indicates there is no data for this field currently available
