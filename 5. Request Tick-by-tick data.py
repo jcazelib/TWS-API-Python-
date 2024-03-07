@@ -1,6 +1,8 @@
 """
-Request TWS Time & Sales data via reqTickByTickData - https://ibkrcampus.com/ibkr-api-page/trader-workstation-api/#tick-by-tick
+Request TWS Time & Sales data (via reqTickByTickData) - https://ibkrcampus.com/ibkr-api-page/trader-workstation-api/#tick-by-tick
 """
+
+tickers = ["AAPL"]
 
 from ibapi.client import *
 from ibapi.wrapper import *
@@ -16,7 +18,6 @@ class TradeApp(EWrapper, EClient):
     def tickByTickAllLast(self, reqId: int, tickType: int, time: int, price: float, size: Decimal, tickAtrribLast: TickAttribLast, exchange: str,specialConditions: str):
         print(" ReqId:", reqId, "Time:", time, "Price:", floatMaxString(price), "Size:", size, "Exch:" , exchange, "Spec Cond:", specialConditions, "PastLimit:", tickAtrribLast.pastLimit, "Unreported:", tickAtrribLast.unreported)
                 
-
     def tickByTickBidAsk(self, reqId: int, time: int, bidPrice: float, askPrice: float, bidSize: Decimal, askSize: Decimal, tickAttribBidAsk: TickAttribBidAsk):
         print("BidAsk. ReqId:", reqId, "Time:", time, "BidPrice:", floatMaxString(bidPrice), "AskPrice:", floatMaxString(askPrice), "BidSize:", decimalMaxString(bidSize), "AskSize:", decimalMaxString(askSize), "BidPastLow:", tickAttribBidAsk.bidPastLow, "AskPastHigh:", tickAttribBidAsk.askPastHigh)
     
@@ -48,7 +49,6 @@ time.sleep(1)
 con_thread = threading.Thread(target=websocket_con, daemon=True)
 con_thread.start()
 
-tickers = ["AAPL"]
 for ticker in tickers:
     time.sleep(.2)
     streamData(tickers.index(ticker),usTechStk(ticker))
