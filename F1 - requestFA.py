@@ -1,9 +1,12 @@
+"""
+Request the available FA group/profile names + U-account IDs included in those groups/profiles - https://ibkrcampus.com/ibkr-api-page/trader-workstation-api/#request-fa
+"""
+
 from ibapi.client import *
 from ibapi.wrapper import *
 import time
 
 port = 7497 
-
 
 class TestApp(EClient, EWrapper):
 
@@ -29,11 +32,8 @@ class TestApp(EClient, EWrapper):
             print("FA Alias (3) info received:")
             print(cxml)      
             print("")
-        
-
 
 app = TestApp()
 app.connect("127.0.0.1", port, 1001)
 time.sleep(2)
 app.run()
-
