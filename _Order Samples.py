@@ -5,6 +5,7 @@ Sections:
    1. Common Order types
    2. Additional Order attrbiutes
    3. Algo Order samples 
+   4. Cryptocurrency orders (MKT & LMT)
 
 
 Available Time-in-force (order.tif) values - https://ibkrguides.com/tws/usersguidebook/ordertypes/time%20in%20force%20for%20orders.htm
@@ -214,7 +215,6 @@ def pegMidOrder(quantity, limitPrice, offsetAmount):             #Pegged to Midp
     order.auxPrice = offsetAmount
     order.account = ''
     return order
-
 
 #For all other samples (for more obscure order types - C:\TWS API\samples\Python\Testbed )
 #-----------------------------------------------------------------------------------------------------------------------------------------------------
@@ -532,3 +532,41 @@ order.algoStrategy = "MinImpact"
 
 order.algoParams = []
 order.algoParams.append(TagValue("maxPctVol", .3))
+#--------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+#--------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+#4. Cryptocurrency orders (MKT or LMT) - https://interactivebrokers.github.io/tws-api/cryptocurrency.html
+
+contract = Contract()  
+contract.symbol = "BTC"            #BTC/LTC/BCH/ETH are tradable with IBKR
+contract.secType = "CRYPTO"
+contract.exchange = "PAXOS"
+contract.currency = "USD"
+
+
+order = Order()
+order.action = "BUY"
+order.lmtPrice = 72550
+order.totalQuantity = .1   
+order.orderType = "LMT"   
+order.tif = "MINUTES"               #IOC or MINUTES
+
+
+order = Order()
+order.action = "BUY"
+order.orderType = "MKT"             
+order.totalQuantity = 0
+order.cashQty = 200                 #cashQty is used for MKT orders only
+order.tif = "IOC"                   #IOC may be required
+
+
+order = Order()
+order.action = "SELL"
+order.orderType = "MKT"          
+order.totalQuantity = 0.00442198    #totalQuantity used for SELL orders
+order.tif = "IOC"                   #IOC may be required
+
+
