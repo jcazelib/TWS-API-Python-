@@ -15,7 +15,7 @@ from ibapi.contract import Contract
 from ibapi.order import Order
 
 contract = Contract()
-contract.symbol = "TSLA"
+contract.symbol = "AAPL"
 contract.secType = "STK"
 contract.exchange = "SMART"
 contract.currency = "USD"
