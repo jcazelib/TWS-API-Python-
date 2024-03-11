@@ -40,7 +40,7 @@ contract.currency = "USD"
 contract.primaryExchange = "NASDAQ" 
 
 
-app.reqHistoricalTicks(18001, contract, "20230728 9:30:00 US/Eastern", "", 10, "BID_ASK", 0, False, [])  
+app.reqHistoricalTicks(123, contract, "20230728 9:30:00 US/Eastern", "", 10, "BID_ASK", 0, False, [])  
 
 time.sleep(2)
 app.run()
