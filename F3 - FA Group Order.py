@@ -1,5 +1,5 @@
 """
-Place an order to be allocated accross multiple U-accounts (or an "FA Group") - https://ibkrcampus.com/ibkr-api-page/trader-workstation-api/#unification-groups-profiles
+Place an order to be allocated accross multiple U-accounts (or an "FA Group") via placeOrder - https://ibkrcampus.com/ibkr-api-page/trader-workstation-api/#unification-groups-profiles
 
 NOTE:
 TWS > File/Edit (top-left corner) > Global Configuration > API > Settings > “Use Account Groups with Allocation Methods” leave this un-checked if you would like the ability to allocate orders to a group using any allocation method 
