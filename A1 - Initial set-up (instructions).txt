@@ -1,5 +1,5 @@
 How to get started with TWS API (Python):
-------------------------------------------
+-----------------------------------------
 1. Download IBKR’s trading platform (either TWS or IB Gateway)
     TWS - https://www.interactivebrokers.com/en/trading/tws.php#tws-software  
     IB Gateway - https://www.interactivebrokers.com/en/trading/ibgateway-latest.php | https://www.interactivebrokers.com/en/trading/ibgateway-stable.php
@@ -21,7 +21,21 @@ How to get started with TWS API (Python):
 
 How to access the IBKR Paper account:
 -------------------------------------
-Login to www.ibkr.com -> Settings (top-right corner via “Welcome + your name”) -> choose: Paper Trading Account -> The paper account's username & password may be retrieved here if needed
+   Login to www.ibkr.com -> Settings (top-right corner via “Welcome + your name”) -> choose: Paper Trading Account -> Your paper account's username & password may be retrieved here if needed
+
+
+
+How to enable API Logging (reccomended):
+----------------------------------------
+TWS
+   1. TWS -> File/Edit (top-left corner) -> Global Configuration -> API -> Settings -> check the box "Create API Message Log file" - > set the logging level to "Detail"  -> Ok
+   2. New requests will generate API logs
+   3. TWS -> Help (top-left corner) -> Troubleshooting -> Diagnostics -> API Logs   |  TWS -> Help (top-left corner) -> Troubleshooting -> Upload Diagnostics -> Submit
+
+IB Gateway
+   1. IB Gateway -> Configure (top-left corner) -> Settings -> API -> Settings -> check the box "Create API Message Log file" -> set the logging level to "Detail"  -> Ok
+   2. New requests will generate API logs
+   3. IB Gateway -> File (top-left corner) -> API Logs   |  IB Gateway -> ctrl+alt+h (simulaneously on your keyboard) -> Submit 
 
 
 
