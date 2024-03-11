@@ -1,6 +1,6 @@
 """
 Request the available FA group/profile names + U-account IDs included in those groups/profiles - https://ibkrcampus.com/ibkr-api-page/trader-workstation-api/#request-fa
-"""
+"""s
 
 from ibapi.client import *
 from ibapi.wrapper import *
