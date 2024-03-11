@@ -1,3 +1,7 @@
+"""
+Preview an order using order.whatIf = True ( https://www.ibkrguides.com/tws/usersguidebook/realtimeactivitymonitoring/checkmargin.htm | https://interactivebrokers.github.io/tws-api/margin.html )
+"""
+
 from ibapi.client import *
 from ibapi.wrapper import *
 from ibapi.contract import Contract
