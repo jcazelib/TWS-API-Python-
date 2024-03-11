@@ -1,5 +1,5 @@
 """
-Request Family Codes - https://ibkrcampus.com/ibkr-api-page/trader-workstation-api/#family-codes
+Request Family Codes (via reqFamilyCodes) - https://ibkrcampus.com/ibkr-api-page/trader-workstation-api/#family-codes
 
 For instance, if individual account U112233 is under a financial advisor with account number F445566, if the function reqFamilyCodes is invoked for the user of account U112233, the family code “F445566A” will be returned, indicating that it belongs within that account family
 """
