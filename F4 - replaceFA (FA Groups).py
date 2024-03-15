@@ -10,6 +10,9 @@ Replace the DU-account numbers below with your own U-accounts or DU-accounts:
     "<String>DU2372889</String>" 
 """
 
+#NOTE:
+#replaceFA will wipe out any existing FA Groups / Profiles (not included in the XML). Be sure to make note of this or export the group before testing with replaceFA
+
 from ibapi.client import *
 from ibapi.wrapper import *
 import time
