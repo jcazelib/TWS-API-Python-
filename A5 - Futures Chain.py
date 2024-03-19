@@ -2,7 +2,7 @@
 Retreive the ES Futures chain (Contract IDs / localSymbols) for various ES Futures contracts which are not yet expired - https://ibkrcampus.com/ibkr-api-page/trader-workstation-api/#option-chain
 
 Uses reqContractDetails
-"""s
+"""
 
 from ibapi.client import *
 from ibapi.wrapper import *
