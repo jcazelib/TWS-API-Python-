@@ -3,7 +3,7 @@ Create an FA Group (i.e. a group of U-accounts) via replaceFA - https://www.ibkr
     TWS -> Advisor Setup (top-left corner) -> Create Group / Edit / etc.
     
 Available allocation methods:
-   Equal / AvailableEquity / NetLiq
+   Equal / AvailableEquity / NetLiqs
 
 This assumes the following setting IS NOT checked:
    TWS > File (top-left corner) > Global Configuration > API > Settings > see: Use Account Groups with Allocation Methods   
