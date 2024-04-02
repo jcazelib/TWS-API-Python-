@@ -55,9 +55,7 @@ class TestApp(EClient, EWrapper):
                                 , "<String>DU2372889</String>"            
                             , "</ListOfAccts>"                               
                             , "<defaultMethod>AvailableEquity</defaultMethod>"     
-                        , "</Group>"      
-                                                                         
-                        
+                        , "</Group>"                                                                
                     , "</ListOfGroups>"))
         
         
