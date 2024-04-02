@@ -5,9 +5,8 @@ Create an FA Group (i.e. a group of U-accounts) via replaceFA - https://www.ibkr
 Available allocation methods:
    Equal / AvailableEquity / NetLiq
 
-Replace the DU-account numbers below with your own U-accounts or DU-accounts:
-    "<String>DU2372888</String>"                      
-    "<String>DU2372889</String>" 
+This assumes the following setting IS NOT checked:
+   TWS > File (top-left corner) > Global Configuration > API > Settings > see: Use Account Groups with Allocation Methods   
 """
 
 #NOTE:
