@@ -1,5 +1,5 @@
 """
-Modify/Create an FA Group (i.e. a group of U-accounts) via replaceFA - https://www.ibkrguides.com/tws/usersguidebook/financialadvisors/create%20an%20account%20group%20for%20share%20allocation.htm?Highlight=group | https://ibkrcampus.com/ibkr-api-page/trader-workstation-api/#replace-fa
+Create an FA Group (i.e. a group of U-accounts) via replaceFA - https://www.ibkrguides.com/tws/usersguidebook/financialadvisors/create%20an%20account%20group%20for%20share%20allocation.htm?Highlight=group | https://ibkrcampus.com/ibkr-api-page/trader-workstation-api/#replace-fa
     TWS -> Advisor Setup (top-left corner) -> Create Group / Edit / etc.
     
 Available allocation methods:
