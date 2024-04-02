@@ -89,9 +89,7 @@ class TestApp(EClient, EWrapper):
                                     , "<amount>4.0</amount>"        
                                 , "</Allocation>"                        
                             , "</ListOfAllocations>"                         
-                        , "</AllocationProfile>" 
-                                                
-                                        
+                        , "</AllocationProfile>"                                        
         , "</ListOfAllocationProfiles>"))
         
         
