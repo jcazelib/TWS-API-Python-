@@ -16,7 +16,6 @@ import time
 port = 7497 
 
 class TestApp(EClient, EWrapper):
-
     def __init__(self):
         EClient.__init__(self, self)
 
@@ -24,78 +23,77 @@ class TestApp(EClient, EWrapper):
         self.nextValidOrderId = orderId
         
         FaFourProfile = "".join(("<?xml version=\"1.0\" encoding=\"UTF-8\"?>"              
-                    , "<ListOfAllocationProfiles>"    
-                                                   
-                        , "<AllocationProfile>"                                  
-                            , "<name>PERCENT</name>"                   
-                            , "<type>1</type>"    
-                            , "<ListOfAllocations varName=\"listOfAllocations\">"
-                                , "<Allocation>"                         
-                                    , "<acct>DU2372888</acct>"                                
-                                    , "<amount>80.0</amount>"        
-                                , "</Allocation>"                        
-                                , "<Allocation>"                         
-                                    , "<acct>DU2372889</acct>"                                
-                                    , "<amount>20.0</amount>"        
-                                , "</Allocation>"                        
-                            , "</ListOfAllocations>"                         
-                        , "</AllocationProfile>"    
+                    , "<ListOfAllocationProfiles>"
+                    	, "<AllocationProfile>"
+                    		, "<name>PERCENT</name>"
+                    		, "<type>1</type>"
+                    		, "<ListOfAllocations varName=\"listOfAllocations\">"
+                    			, "<Allocation>"
+                    				, "<acct>DU2372888</acct>"
+                    				, "<amount>80.0</amount>"
+                    			, "</Allocation>"
+                    			, "<Allocation>"
+                    				, "<acct>DU2372889</acct>"
+                    				, "<amount>20.0</amount>"
+                    			, "</Allocation>"
+                    		, "</ListOfAllocations>"
+                    	, "</AllocationProfile>"
                         
-                        , "<AllocationProfile>"                                  
-                            , "<name>RATIO</name>"                   
-                            , "<type>2</type>"    
-                            , "<ListOfAllocations varName=\"listOfAllocations\">"
-                                , "<Allocation>"                         
-                                    , "<acct>DU2372888</acct>"                                
-                                    , "<amount>5.0</amount>"        
-                                , "</Allocation>"                        
-                                , "<Allocation>"                         
-                                    , "<acct>DU2372889</acct>"                                
-                                    , "<amount>4.0</amount>"        
-                                , "</Allocation>"                        
-                            , "</ListOfAllocations>"                         
-                        , "</AllocationProfile>" 
+                    	, "<AllocationProfile>"
+                    		, "<name>RATIO</name>"
+                    		, "<type>2</type>"
+                    		, "<ListOfAllocations varName=\"listOfAllocations\">"
+                    			, "<Allocation>"
+                    				, "<acct>DU2372888</acct>"
+                    				, "<amount>5.0</amount>"
+                    			, "</Allocation>"
+                    			, "<Allocation>"
+                    				, "<acct>DU2372889</acct>"
+                    				, "<amount>4.0</amount>"
+                    			, "</Allocation>"
+                    		, "</ListOfAllocations>"
+                    	, "</AllocationProfile>"
                         
-                        , "<AllocationProfile>"                                  
-                            , "<name>CONTRACTS/SHARES</name>"                   
-                            , "<type>3</type>"                    
-                            , "<ListOfAllocations varName=\"listOfAllocations\">"
-                                , "<Allocation>"                         
-                                    , "<acct>DU2372888</acct>"                                
-                                    , "<amount>2.0</amount>"        
-                                , "</Allocation>"                        
-                                , "<Allocation>"                         
-                                    , "<acct>DU2372889</acct>"                                
-                                    , "<amount>1.0</amount>"        
-                                , "</Allocation>"                        
-                            , "</ListOfAllocations>"                         
-                        , "</AllocationProfile>"                            
+                    	, "<AllocationProfile>"
+                    		, "<name>CONTRACTS/SHARES</name>"
+                    		, "<type>3</type>"
+                    		, "<ListOfAllocations varName=\"listOfAllocations\">"
+                    			, "<Allocation>"
+                    				, "<acct>DU2372888</acct>"
+                    				, "<amount>2.0</amount>"
+                    			, "</Allocation>"
+                    			, "<Allocation>"
+                    				, "<acct>DU2372889</acct>"
+                    				, "<amount>1.0</amount>"
+                    			, "</Allocation>"
+                    		, "</ListOfAllocations>"
+                    	, "</AllocationProfile>"
                         
-                        , "<AllocationProfile>"                                  
-                            , "<name>CASH</name>"                   
-                            , "<type>4</type>"    
-                            , "<ListOfAllocations varName=\"listOfAllocations\">"
-                                , "<Allocation>"                         
-                                    , "<acct>DU2372888</acct>"                                
-                                    , "<amount>5.0</amount>"        
-                                , "</Allocation>"                        
-                                , "<Allocation>"                         
-                                    , "<acct>DU2372889</acct>"                                
-                                    , "<amount>4.0</amount>"        
-                                , "</Allocation>"                        
-                            , "</ListOfAllocations>"                         
-                        , "</AllocationProfile>"                                        
-        , "</ListOfAllocationProfiles>"))
+                    	, "<AllocationProfile>"
+                    		, "<name>CASH</name>"
+                    		, "<type>4</type>"
+                    		, "<ListOfAllocations varName=\"listOfAllocations\">"
+                    			, "<Allocation>"
+                    				, "<acct>DU2372888</acct>"
+                    				, "<amount>5.0</amount>"
+                    			, "</Allocation>"
+                    			, "<Allocation>"
+                    				, "<acct>DU2372889</acct>"
+                    				, "<amount>4.0</amount>"
+                    			, "</Allocation>"
+                    		, "</ListOfAllocations>"
+                    	, "</AllocationProfile>"
+                    , "</ListOfAllocationProfiles>"))
         
         
         self.replaceFA(orderId, 2, FaFourProfile)                              #1 for Groups | 2 for Profiles    
         print("Processing replaceFA() request", orderId, "...")
-        time.sleep(2)
+        time.sleep(.5)
         print("")
         print("")
         print("New FA Profiles:")
         self.requestFA(FaDataTypeEnum.PROFILES)
-        time.sleep(2)
+        time.sleep(.5)
         self.disconnect()
         
     def receiveFA(self, faData: FaDataType, cxml: str):
