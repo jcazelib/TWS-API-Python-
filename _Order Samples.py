@@ -437,7 +437,7 @@ order.algoParams.append(TagValue("noTakeLiq", int(0)))
 
 
 
-#TWAP algo may be DEPRECATED (for Stocks/Options/Futures/Forex) - https://www.interactivebrokers.com/en/trading/orders/twap-algo.php
+#TWAP algo (for Stocks/Options/Futures/Forex) - https://www.interactivebrokers.com/en/trading/orders/twap-algo.php
 order = Order()
 order.action = "BUY"
 order.totalQuantity = 1
