@@ -1,7 +1,7 @@
 """
 One way to retrieve Option Greeks + Implied Volatility is to use reqMktData for the Option contract - https://ibkrcampus.com/ibkr-api-page/twsapi-doc/#option-greeks |  https://ibkrcampus.com/ibkr-api-page/twsapi-doc/#available-tick-types 
 -> Values are returned to EWrapper::tickOptionComputation - https://ibkrcampus.com/ibkr-api-page/twsapi-doc/#receive-options-data 
-""" 
+"""  
 
 from ibapi.client import EClient
 from ibapi.wrapper import EWrapper
