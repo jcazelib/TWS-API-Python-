@@ -1,5 +1,5 @@
 How to get started with TWS API (Python):
------------------------------------------
+----------------------------------------- 
 1. Download IBKR’s trading platform (either TWS or IB Gateway)
     TWS - https://www.interactivebrokers.com/en/trading/tws.php#tws-software  
     IB Gateway - https://www.interactivebrokers.com/en/trading/ibgateway-latest.php | https://www.interactivebrokers.com/en/trading/ibgateway-stable.php
