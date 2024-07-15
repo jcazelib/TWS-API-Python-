@@ -44,7 +44,7 @@ def limitOrder(quantity, lmt_price):
     order.totalQuantity = quantity
     order.lmtPrice = lmt_price
     order.outsideRth = False
-    #order.account = ''               #To specify the U-account number 
+    #order.account = 'DUXXXX123'      #To specify the U-account number 
     #order.transmit = False           #To send the order to TWS, but not yet transmit it
     return order
 
