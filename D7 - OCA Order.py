@@ -64,8 +64,6 @@ def profitTaker(direction, quantity):
     order.lmtPrice = profittaker
     order.ocaGroup = 3                            #String used to identify the OCA group name
     #order.ocaType = 2                            #To specify OCA Type - https://interactivebrokers.github.io/tws-api/oca.html
-    order.account = "DU2372888"
-
     return order
 
 def StopOrder(direction, quantity):
@@ -76,8 +74,6 @@ def StopOrder(direction, quantity):
     order.auxPrice = stoploss         
     order.ocaGroup = 3                            #String used to identify the OCA group name
     #order.ocaType = 2                            #To specify OCA Type - https://interactivebrokers.github.io/tws-api/oca.html
-    order.account = "DU2372888"
-
     return order
 
 
@@ -90,7 +86,7 @@ app.reqIds(-1)
 time.sleep(2)
 
 order_id = app.nextValidOrderId
-app.placeOrder(order_id, usTechStk(ticker), StopOrder("SELL", 1))         #Stop Loss
+app.placeOrder(order_id, usTechStk(ticker), StopOrder("SELL", 1))           #Stop Loss
 time.sleep(2)
 
 
