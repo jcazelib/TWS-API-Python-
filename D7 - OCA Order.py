@@ -1,4 +1,5 @@
-"""OCA Order using placeOrder
+"""
+OCA Order using placeOrder
 
 May be useful for a trader which is already long/short a position (AAPL stock) and is looking to manage risk by adding a profit taker + stop loss
 """
