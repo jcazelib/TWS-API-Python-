@@ -37,7 +37,7 @@ con_thread.start()
 time.sleep(1) 
 
 app.reqPositions()
-#app.reqPositionsMulti(2, "DU2372888", "")  #To specify a U-account number
+#app.reqPositionsMulti(2, "DUXXXX123", "")  #To specify a U-account number
 #app.reqPositionsMulti(3, "Group1", "")     #To specify a Financial Advisor Group / Profile 
 time.sleep(1)
 
