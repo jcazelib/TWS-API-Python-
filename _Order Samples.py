@@ -37,7 +37,7 @@ def marketOrder(quantity):                              #Market (MKT) order - ht
     order.action = "BUY"
     order.orderType = "MKT" 
     order.totalQuantity = quantity
-    order.account = ''
+    #order.account = ''
     return order
 
 def limitOrder(quantity, limitPrice):                   #Limit (LMT) order - https://www.interactivebrokers.com/en/trading/orders/limit.php
@@ -48,7 +48,7 @@ def limitOrder(quantity, limitPrice):                   #Limit (LMT) order - htt
     order.lmtPrice = limitPrice
     order.outsideRth = False
     order.tif="DAY"
-    order.account = ''
+    #order.account = ''
     return order
 
 def stopOrder(quantity, triggerPrice):                  #Stop loss (STP) order - https://www.interactivebrokers.com/en/trading/orders/stop.php
@@ -57,7 +57,7 @@ def stopOrder(quantity, triggerPrice):                  #Stop loss (STP) order -
     order.orderType = "STP"
     order.totalQuantity = quantity
     order.auxPrice = triggerPrice
-    order.account = ''
+    #order.account = ''
     return order
 
 def stopLimitOrder(quantity, limitPrice, triggerPrice):   #Stop limit (STP LMT) order - https://www.interactivebrokers.com/en/trading/orders/stop-limit.php
@@ -67,7 +67,7 @@ def stopLimitOrder(quantity, limitPrice, triggerPrice):   #Stop limit (STP LMT) 
     order.totalQuantity = quantity
     order.lmtPrice = limitPrice
     order.auxPrice = triggerPrice
-    order.account = ''
+    #order.account = ''
     return order
 
 def trailStopOrder(quantity, trailingStopPrice):           #Trailing Stop (TRAIL) order - https://www.interactivebrokers.com/en/trading/orders/trailing-stops.php
@@ -77,7 +77,7 @@ def trailStopOrder(quantity, trailingStopPrice):           #Trailing Stop (TRAIL
     order.totalQuantity = quantity
     order.auxPrice = trailingStopPrice
     #order.TrailingPercent  = trailingPercent              #Trailing % can also be specified https://interactivebrokers.github.io/tws-api/classIBApi_1_1Order.html#ab6dd5e6425dcafecaf83c03d97688b92
-    order.account = ''
+    #order.account = ''
     return order
 
 def trailStopLimitOrder(quantity, trailingStopPrice, trailingAmount, lmtOffset):      #Trailing Stop Limit (TRAIL LMT) order - https://www.interactivebrokers.com/en/trading/orders/trailing-stop-limit.php
@@ -88,7 +88,7 @@ def trailStopLimitOrder(quantity, trailingStopPrice, trailingAmount, lmtOffset):
     order.trailStopPrice = trailingStopPrice
     order.auxPrice = trailingAmount
     order.lmtPriceOffset = lmtOffset
-    order.account = ''
+    #order.account = ''
     return order
 
 def whatIfOrder(quantity, limitPrice):            #What-if order or "margin preview" - https://www.ibkrguides.com/tws/usersguidebook/realtimeactivitymonitoring/checkmargin.htm | https://interactivebrokers.github.io/tws-api/margin.html
@@ -99,7 +99,7 @@ def whatIfOrder(quantity, limitPrice):            #What-if order or "margin prev
     order.lmtPrice = limitPrice
     order.outsideRth = False
     order.tif="DAY"
-    order.account = ''
+    #order.account = ''
     order.whatIf = True
     return order
 
@@ -108,7 +108,7 @@ def mooOrder(quantity):                         #Market on open (MKT) order - ht
     order.action = "BUY"
     order.orderType = "MKT"
     order.totalQuantity = quantity
-    order.account = ''
+    #order.account = ''
     order.tif="OPG"                             
     return order
 
@@ -119,7 +119,7 @@ def looOrder(quantity, limitPrice):              #Limit on open (LMT) order - ht
     order.totalQuantity = quantity
     order.auxPrice = limitPrice
     order.tif="OPG"
-    order.account = ''
+    #order.account = ''
     return order
 
 def mocOrder(quantity):                         #Market on close (MOC) order - https://www.interactivebrokers.com/en/trading/orders/moc.php
@@ -127,7 +127,7 @@ def mocOrder(quantity):                         #Market on close (MOC) order - h
     order.action = "BUY"
     order.orderType = "MOC"
     order.totalQuantity = quantity
-    order.account = ''
+    #order.account = ''
     return order
 
 def locOrder(quantity, limitPrice):              #Limit on close (LOC) order - https://www.interactivebrokers.com/en/trading/orders/loc.php
@@ -136,7 +136,7 @@ def locOrder(quantity, limitPrice):              #Limit on close (LOC) order - h
     order.orderType = "LOC"
     order.totalQuantity = quantity
     order.lmtPrice = limitPrice
-    order.account = ''
+    #order.account = ''
     return order
 
 def mitOrder(quantity, triggerPrice):            #Market if touched (MIT) order - https://www.interactivebrokers.com/en/trading/orders/mit.php
@@ -145,7 +145,7 @@ def mitOrder(quantity, triggerPrice):            #Market if touched (MIT) order 
     order.orderType = "MIT"
     order.totalQuantity = quantity
     order.auxPrice = triggerPrice
-    order.account = ''
+    #order.account = ''
     return order
 
 def litOrder(quantity, limitPrice, triggerPrice):  #Limit if touched (LIT) order - https://www.interactivebrokers.com/en/trading/orders/lit.php
@@ -155,7 +155,7 @@ def litOrder(quantity, limitPrice, triggerPrice):  #Limit if touched (LIT) order
     order.totalQuantity = quantity
     order.lmtPrice = limitPrice
     order.auxPrice = triggerPrice
-    order.account = ''
+    #order.account = ''
     return order
 
 def mtlOrder(quantity, limitPrice, triggerPrice):    #Market to Limit (MTL) order - https://www.interactivebrokers.com/en/trading/orders/mtl.php
@@ -163,7 +163,7 @@ def mtlOrder(quantity, limitPrice, triggerPrice):    #Market to Limit (MTL) orde
     order.action = "BUY"
     order.orderType = "MTl"
     order.totalQuantity = quantity
-    order.account = ''
+    #order.account = ''
     return order
 
 def relativeOrder(quantity, priceCap, offsetAmount):  #Relative/Pegged to Primary (REL) order - https://www.interactivebrokers.com/en/trading/orders/pegged-to-primary.php
@@ -173,7 +173,7 @@ def relativeOrder(quantity, priceCap, offsetAmount):  #Relative/Pegged to Primar
     order.totalQuantity = quantity
     order.lmtPrice = priceCap
     order.auxPrice = offsetAmount
-    order.account = ''
+    #order.account = ''
     return order
 
 def cashQtyOrder(cashquantity, limitPrice):         #LMT order using cashQty (cash quantity) instead of share quantity | TWS > File/Edit (top-left corner) > Global Configuration > Presets > Stocks > Size (section) > see "Cash Quantity Estimate Factor" (estFactor) > acceptable values are 5% - 100%  
@@ -183,7 +183,7 @@ def cashQtyOrder(cashquantity, limitPrice):         #LMT order using cashQty (ca
     order.totalQuantity = 0                         #Must be 0 for cashQty orders
     order.cashQty = cashquantity
     order.lmtPrice = limitPrice
-    order.account = ''
+    #order.account = ''
     return order
 
 def pegMktOrder(quantity, offsetAmount):             #Pegged to Market (PEG MKT) order - https://www.interactivebrokers.com/en/trading/orders/pegged-to-market.php
@@ -192,7 +192,7 @@ def pegMktOrder(quantity, offsetAmount):             #Pegged to Market (PEG MKT)
     order.orderType = "PEG MKT"
     order.totalQuantity = quantity
     order.auxPrice = offsetAmount
-    order.account = ''
+    #order.account = ''
     return order
 
 def pegStockOrder(quantity, dlta, stockReferencePrice, startingPrice):         #Pegged to Stock (PEG STK) order - https://www.interactivebrokers.com/en/trading/orders/pegged-to-stock.php 
@@ -203,7 +203,7 @@ def pegStockOrder(quantity, dlta, stockReferencePrice, startingPrice):         #
     order.delta = dlta
     order.stockRefPrice  = stockReferencePrice
     order.startingPrice = startingPrice
-    order.account = ''
+    #order.account = ''
     return order
 
 def pegMidOrder(quantity, limitPrice, offsetAmount):             #Pegged to Midpoint (PEG MID) order - https://www.interactivebrokers.com/en/trading/orders/pegged-to-midpoint.php
@@ -213,7 +213,7 @@ def pegMidOrder(quantity, limitPrice, offsetAmount):             #Pegged to Midp
     order.totalQuantity = quantity
     order.lmtPrice  = limitPrice
     order.auxPrice = offsetAmount
-    order.account = ''
+    #order.account = ''
     return order
 
 #For all other samples (for more obscure order types - C:\TWS API\samples\Python\Testbed )
@@ -233,7 +233,7 @@ def outsideRthLimitOrder(quantity, limitPrice):
     order.lmtPrice = limitPrice
     order.outsideRth = True                #To specify "allow this order to fill outside of regular trading hours"
     order.tif="DAY"
-    order.account = ''
+    #order.account = ''
     return order
 
 def atsLimitOrder(quantity, limitPrice):   #Used with contract.exchange = "IBKRATS" - https://www.interactivebrokers.com/en/trading/orders/ibkrats.php | https://interactivebrokers.github.io/tws-api/ibkrats.html
@@ -252,7 +252,7 @@ def pmaLimitOrder(quantity, limitPrice):
     order.totalQuantity = quantity
     order.lmtPrice = limitPrice
     order.usePriceMgmtAlgo = True          #Uses IBKR's Price Management algo - https://interactivebrokers.github.io/tws-api/classIBApi_1_1Order.html#aa2951544e2b775b4fc971cbdc43f01e0
-    order.account = ''
+    #order.account = ''
     return order
 
 def refLimitOrder(quantity, limitPrice):
@@ -262,7 +262,7 @@ def refLimitOrder(quantity, limitPrice):
     order.totalQuantity = quantity
     order.lmtPrice = limitPrice
     order.orderRef = "Random strings are Ok here"    #Specify a random string/order reference which will be shown in TWS
-    order.account = ''
+    #order.account = ''
     return order
 
 def hiddenLimitOrder(quantity, limitPrice):
@@ -273,7 +273,7 @@ def hiddenLimitOrder(quantity, limitPrice):
     order.lmtPrice = limitPrice
     order.hidden = True
     #order.displaySize = 50        #Set a publicly disclosed order size < actual order size - https://interactivebrokers.github.io/tws-api/classIBApi_1_1Order.html#a87316898d4e44f4537555f5999088457 
-    order.account = ''
+    #order.account = ''
     return order
 
 def gtdLimitOrder(quantity, limitPrice):
