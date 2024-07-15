@@ -6,7 +6,7 @@ How to get started with TWS API (Python):
 
 2. Download TWS API - https://interactivebrokers.github.io/  
 
-3. Run the setup.py file in Command Prompt / Anaconda prompt - https://ibkrcampus.com/ibkr-api-page/trader-workstation-api/#setup-python  
+3. (For Python users ONLY) - run the setup.py file in Command Prompt / Anaconda prompt - https://ibkrcampus.com/ibkr-api-page/trader-workstation-api/#setup-python  
     Open Command Prompt (or "Terminal" for MAC/UNIX)
     cd C:\TWS API\source\pythonclient
     python setup.py install
