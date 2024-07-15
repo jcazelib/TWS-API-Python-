@@ -10,8 +10,8 @@ Could be used to share FA Groups from 1 TWS user to another, etc.
 # 	<Group>
 # 		<name>EqualQuantity</name>
 # 		<ListOfAccts varName="list">
-# 			<String>DU2372888</String>
-# 			<String>DU2372889</String>
+# 			<String>DUXXXX123</String>
+# 			<String>DUXXXX124</String>
 # 		</ListOfAccts>
 # 		<defaultMethod>Equal</defaultMethod>
 # 		<linkedHFGroup>false</linkedHFGroup>
@@ -26,11 +26,11 @@ string2 = """<?xml version="1.0" encoding="UTF-8"?>
 		<type>1</type>
 		<ListOfAllocations varName="listOfAllocations">
 			<Allocation>
-				<acct>DU2372888</acct>
+				<acct>DUXXXX123</acct>
 				<amount>80.0</amount>
 			</Allocation>
 			<Allocation>
-				<acct>DU2372889</acct>
+				<acct>DUXXXX124</acct>
 				<amount>20.0</amount>
 			</Allocation>
 		</ListOfAllocations>
