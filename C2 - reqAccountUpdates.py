@@ -31,7 +31,7 @@ class TestApp(EWrapper, EClient):
     def start(self):
         # Account number can be omitted when using reqAccountUpdates with single account structure
         #self.reqAccountUpdates(True, "")
-        self.reqAccountUpdates(True, "DU2372888") #To specify the U-account number 
+        self.reqAccountUpdates(True, "DUXXXX123") #To specify the U-account number 
 
     # def stop(self):
     #     self.reqAccountUpdates(False, "")
