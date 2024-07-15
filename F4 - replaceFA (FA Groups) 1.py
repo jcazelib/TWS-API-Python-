@@ -32,8 +32,8 @@ class TestApp(EClient, EWrapper):
                         , "<Group>"                                              
                             , "<name>EqualQuantity</name>"              #Name of group 1        
                             , "<ListOfAccts varName=\"list\">"               
-                                , "<String>DU2372888</String>"          #U-account IDs for group 1              
-                                , "<String>DU2372889</String>"            
+                                , "<String>DUXXXX123</String>"          #U-account IDs for group 1              
+                                , "<String>DUXXXX124</String>"            
                             , "</ListOfAccts>"                               
                             , "<defaultMethod>Equal</defaultMethod>"    #Set the allocation method here - Equal / AvailableEquity / NetLiq
                         , "</Group>"                                    
@@ -41,8 +41,8 @@ class TestApp(EClient, EWrapper):
                         , "<Group>"                                              
                             , "<name>NetLiquidation</name>"                     
                             , "<ListOfAccts varName=\"list\">"               
-                                , "<String>DU2372888</String>"                                
-                                , "<String>DU2372889</String>"            
+                                , "<String>DUXXXX123</String>"                                
+                                , "<String>DUXXXX124</String>"            
                             , "</ListOfAccts>"                               
                             , "<defaultMethod>NetLiq</defaultMethod>"     
                         , "</Group>"                                    
@@ -50,8 +50,8 @@ class TestApp(EClient, EWrapper):
                         , "<Group>"                                              
                             , "<name>AvailableEquity</name>"                      
                             , "<ListOfAccts varName=\"list\">"               
-                                , "<String>DU2372888</String>"                                
-                                , "<String>DU2372889</String>"            
+                                , "<String>DUXXXX123</String>"                                
+                                , "<String>DUXXXX124</String>"            
                             , "</ListOfAccts>"                               
                             , "<defaultMethod>AvailableEquity</defaultMethod>"     
                         , "</Group>"                                                                
