@@ -3,7 +3,7 @@ IBKR Python TWSAPI Samples
 Author - 
 John Cazel / jcazelib | https://github.com/jcazelib
 
-Documnetation - 
+Documentation - 
 https://ibkrcampus.com/ibkr-api-page/twsapi-doc/
 
 Purpose - 
