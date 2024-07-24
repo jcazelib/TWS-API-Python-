@@ -3,7 +3,7 @@ from pickle import FALSE, TRUE
 from tkinter.tix import Tree
 from ibapi.client import *
 from ibapi.wrapper import *
-from datetime import datetime
+from datetime import datetime  
 from ibapi.contract import *
 from ibapi.order_condition import Create, OrderCondition
 import time
