@@ -3,7 +3,6 @@ Sample TWS API request to retrieve Real FX balances via reqAccountSummary.
 
 In TWS, RealFX balances may be seen via the TWS "Account Window"
    TWS -> Account (top-left corner) -> Account Window -> Expand & View “Real FX Balances”
-
 """
 
 from ibapi.client import *
