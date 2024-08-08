@@ -9,7 +9,7 @@ from ibapi.client import *
 from ibapi.wrapper import EWrapper
 import time
 
-port = 7496
+port = 7497
 
 global Currencies, Currency_Positions
 Currencies = []
