@@ -549,24 +549,24 @@ contract.currency = "USD"
 
 order = Order()
 order.action = "BUY"
-order.lmtPrice = 72550
-order.totalQuantity = .1   
+order.lmtPrice = 1
+order.totalQuantity = 0.001   
 order.orderType = "LMT"   
-order.tif = "MINUTES"               #IOC or MINUTES
+order.tif = "MINUTES"             #IOC or MINUTES
 
 
 order = Order()
 order.action = "BUY"
 order.orderType = "MKT"             
 order.totalQuantity = 0
-order.cashQty = 200                 #cashQty is used for MKT orders only
-order.tif = "IOC"                   #IOC may be required
+order.cashQty = 1                 #cashQty is used for MKT orders only
+order.tif = "IOC"                 #IOC may be required
 
 
 order = Order()
 order.action = "SELL"
 order.orderType = "MKT"          
-order.totalQuantity = 0.00442198    #totalQuantity used for SELL orders
-order.tif = "IOC"                   #IOC may be required
+order.totalQuantity = 0.001      #totalQuantity used for SELL orders
+order.tif = "IOC"                #IOC may be required
 
 
