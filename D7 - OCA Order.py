@@ -16,7 +16,7 @@ import time
 #==================================================================================================================
 ticker = "AAPL"    
 profittaker = 240
-stoploss = 225
+stoploss = 220
 
 
 #==================================================================================================================
@@ -63,7 +63,7 @@ def profitTaker(direction, quantity):
     order.orderType = "LMT"
     order.totalQuantity = quantity
     order.lmtPrice = profittaker
-    order.ocaGroup = 3                            #String used to identify the OCA group name
+    order.ocaGroup = "OCA_Group1"                 #String used to identify the OCA group name
     #order.ocaType = 2                            #To specify OCA Type - https://interactivebrokers.github.io/tws-api/oca.html
     return order
 
@@ -73,7 +73,7 @@ def StopOrder(direction, quantity):
     order.orderType = "STP"
     order.totalQuantity = quantity
     order.auxPrice = stoploss         
-    order.ocaGroup = 3                            #String used to identify the OCA group name
+    order.ocaGroup = "OCA_Group1"                 #String used to identify the OCA group name
     #order.ocaType = 2                            #To specify OCA Type - https://interactivebrokers.github.io/tws-api/oca.html
     return order
 
