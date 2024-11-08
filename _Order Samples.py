@@ -546,22 +546,12 @@ contract.secType = "CRYPTO"
 contract.exchange = "PAXOS"
 contract.currency = "USD"
 
-
-order = Order()
-order.action = "BUY"
-order.lmtPrice = 1
-order.totalQuantity = 0.001   
-order.orderType = "LMT"   
-order.tif = "MINUTES"             #IOC or MINUTES
-
-
 order = Order()
 order.action = "BUY"
 order.orderType = "MKT"             
 order.totalQuantity = 0
-order.cashQty = 1                 #cashQty is used for MKT orders only
+order.cashQty = 1                 #cashQty is used with totalQuantity=0
 order.tif = "IOC"                 #IOC may be required
-
 
 order = Order()
 order.action = "SELL"
@@ -569,4 +559,16 @@ order.orderType = "MKT"
 order.totalQuantity = 0.001      #totalQuantity used for SELL orders
 order.tif = "IOC"                #IOC may be required
 
+order = Order()
+order.action = "BUY"
+order.lmtPrice = 1
+order.totalQuantity = 0.001   
+order.orderType = "LMT"   
+order.tif = "MINUTES"             #IOC may be required
 
+order = Order()
+order.action = "SELL"
+order.lmtPrice = 1
+order.totalQuantity = 0.001   
+order.orderType = "LMT"   
+order.tif = "MINUTES"             #IOC may be required
