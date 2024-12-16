@@ -59,8 +59,6 @@ time.sleep(7)
 app.placeOrder(order_id, stockContract("AAPL"), limitOrder(2, 2))   #Modify Order (BUY 1 share @ 1) -> to BUY 2 shares @ 2
 print("Order Modified")
 
-time.sleep(7)
-app.cancelOrder(order_id, "")   #Cancel Order
-print("Order Canceled")
+#Cancelling orders - https://www.interactivebrokers.com/campus/ibkr-api-page/twsapi-doc/#cancel-order
 
 
